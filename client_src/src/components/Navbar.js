@@ -6,41 +6,41 @@ class Navbar extends Component {
     return (
       <div>
         <nav className="blue darken-3">
-          <div className="nav-wrapper">
-            <a href="/" className="brand-logo center">
+          <div class="nav-wrapper">
+            <a href="/" class="brand-logo center">
               Meetups
             </a>
             <a
-              data-activates="main-menu"
-              className="button-collapse show-on-large sidenav-trigger"
+              data-target="mobile-demo"
+              class="button-collapse show-on-large sidenav-trigger"
             >
-              <i className="fa fa-bars" />
+              <i class="fa fa-bars" />
             </a>
-            <ul className="right hide-on-small-only">
+            <ul class="right hide-on-small-only">
               <li>
                 <Link to="/">
                   <i className="fa fa-users" />
                   Meetups
-                </Link>
-              </li>
-            </ul>
-
-            <ul className="side-nav" id="main-menu">
-              <li>
-                <Link to="/">
-                  <i className="fa fa-users" />
-                  Meetups
-                </Link>
-              </li>
-              <li>
-                <Link to="/meetups/add">
-                  <i className="fa fa-plus" />
-                  Add Meetup
                 </Link>
               </li>
             </ul>
           </div>
         </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+          <li>
+            <Link to="/">
+              <i className="fa fa-users" />
+              Meetups
+            </Link>
+          </li>
+          <li>
+            <Link to="/meetups/add">
+              <i className="fa fa-plus" />
+              Add Meetup
+            </Link>
+          </li>
+        </ul>
       </div>
     );
   }
