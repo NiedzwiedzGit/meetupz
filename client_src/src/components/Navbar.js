@@ -6,17 +6,17 @@ class Navbar extends Component {
     return (
       <div>
         <nav className="blue darken-3">
-          <div class="nav-wrapper">
-            <a href="/" class="brand-logo center">
+          <div className="nav-wrapper">
+            <a href="/" className="brand-logo center">
               Meetups
             </a>
             <a
               data-target="mobile-demo"
-              class="button-collapse show-on-large sidenav-trigger"
+              className="button-collapse show-on-large sidenav-trigger"
             >
-              <i class="fa fa-bars" />
+              <i className="fa fa-bars" />
             </a>
-            <ul class="right hide-on-small-only">
+            <ul className="right hide-on-small-only">
               <li>
                 <Link to="/">
                   <i className="fa fa-users" />
@@ -27,7 +27,7 @@ class Navbar extends Component {
           </div>
         </nav>
 
-        <ul class="sidenav" id="mobile-demo">
+        <ul className="sidenav" id="mobile-demo">
           <li>
             <Link to="/">
               <i className="fa fa-users" />
@@ -38,6 +38,12 @@ class Navbar extends Component {
             <Link to="/meetups/add">
               <i className="fa fa-plus" />
               Add Meetup
+            </Link>
+          </li>
+          <li>
+            <Link to="/about">
+              <i className="fa fa-question-circle" />
+              About
             </Link>
           </li>
         </ul>
